@@ -1,0 +1,68 @@
+.sessaoOtherSkills{
+    height: 100vh;
+    overflow: hidden;
+}
+.sessaoOtherSkills .otherSkills{
+    margin: 7rem auto;
+}
+.sessaoOtherSkills .otherSkills ul{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 28%;
+    margin: 0 6rem;
+}
+.sessaoOtherSkills .otherSkills ul li{
+    height: 0.6rem;
+    background: #a1a1a1;
+    width: 100%;
+    margin-bottom: 7rem;
+    padding: 0;
+    position: relative;
+    margin-right: 3rem;
+}
+.sessaoOtherSkills .otherSkills ul li .progress{
+    background: #002B33;
+    position: relative;
+    height: 100%;
+
+}
+.sessaoOtherSkills .otherSkills ul li span{
+    position: absolute;
+    right: 0;
+    top: -3.6rem;
+    display: block;
+    font-family: "poppins-regular", sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1;
+    background: #002B33;
+    padding: 0.6rem 0.6rem;
+    border-radius: 3px;
+    opacity: .8;
+    z-index: 3;
+}
+.sessaoOtherSkills .otherSkills ul li span::after{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #002B33;
+    content: "";
+    opacity: .8;
+    z-index: 3;
+}
+.sessaoOtherSkills .otherSkills ul li strong{
+    position: absolute;
+    left: 0;
+    top: -3rem;
+    font-family: "poppins-bold", sans-serif;
+    color: #002B33;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+}

@@ -163,7 +163,7 @@ header.openMenu nav ul.menuList li{
     text-align: center;
 }
 header.openMenu nav ul.menuList li:hover{
-    color: #6a3093;
+    color: var(--color-2);
 }
 header.openMenu nav ul.socialMidiaUlist{
     font-size: 3rem;
@@ -172,7 +172,7 @@ header.openMenu nav ul.socialMidiaUlist{
     margin-top: 14rem;
 }
 header.openMenu nav ul.socialMidiaUlist li{
-    color: #6a3093;
+    color: var(--color-2);
 }
 header.openMenu nav ul.socialMidiaUlist li i:hover{
     color: #000;

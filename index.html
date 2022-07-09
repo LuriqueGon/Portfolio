@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/keyFrames.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sessaoSobre.css">
+    <link rel="stylesheet" href="./css/sessaoConhecimentos.css">
+    <link rel="stylesheet" href="./css/sessaoOtherSkills.css">
 
     <script src="scripts/openMenu.js" defer></script>
 
@@ -48,7 +51,7 @@
                 <p>Portfólio</p>
                 <h1>| Luiz Henrique | Lurique | </h1>
                 <p>Desenvolvedor Web  &  Front-End </p>
-                <button><a href="#">Saiba mais <i class="fa-solid fa-angle-down"></i> </a></button>
+                <button><a href="#sobre">Saiba mais <i class="fa-solid fa-angle-down"></i> </a></button>
                 <!-- <button>Saiba menos <i class="fa-solid fa-angle-up"></i> </button> -->
             </section>
             <aside class="socialMidia">
@@ -61,13 +64,13 @@
         </section>
         <nav>
             <ul class="menuList">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Conhecimentos</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Orçamento</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
             </ul>
             <ul class="socialMidiaUlist">
                 <li>
@@ -83,7 +86,182 @@
         </nav>
     </header>
     <main>
+        <section class="sessaoSobre" id="sobre">
+            <div class="header">
+                <h2>Sobre</h2>
+                <h3>Um pouco sobre mim ...</h3>  
+                <div class="info">
+                    <div class="perfil">
+                        <img src="image/understanding-3914811_1280.jpg" alt="">
+                    </div>                         
+                    <p>Me chamo Luiz Henrique. Durante a pandemia, mais precisamente em novembro de 2021, surgiu uma paixão tremenda pela programação. Desde então venho sempre tentando me aprimorar com cursos, e graduações. Atualmente graduando em <abbr title="Analise e Desenvolvimento de Software">ADS</abbr> pela Estacio. Busco uma graduação de Ciencia da Computação. Meu maior ponto forte é front-end, e a minha linguagem "Favorita" é <abbr title="Java Script">JS</abbr></p>
+                </div>
+            </div>
+        </section>
+        <section class="skills sessaoConhecimentos" id="conhecimentos">
+            <div class="header sessaoHeader">
+                <h2>Conhecimentos e habilidades</h2>
+                <p>Minhas especialidades</p>                
+            </div>
+            <div class="skills">
 
+                <div class="skill">
+                    <div class="conhecimentoHeader">
+                        <i class="fa-brands fa-html5"></i>
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress" style="width:90% ;">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="conhecimentoInfo"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="conhecimentoHeader">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress" style="width:90% ;">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="conhecimentoInfo">
+                        
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="conhecimentoHeader">
+                        <i class="fa-brands fa-php"></i>
+                        <h2>PHP</h2>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress" style="width:45% ;">
+                            <span>45%</span>
+                        </div>
+                    </div>
+                    <div class="conhecimentoInfo"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="conhecimentoHeader">
+                        <i class="fa-brands fa-github"></i>
+                        <h2>Git e GitHub</h2>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress" style="width:70% ;">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="conhecimentoInfo"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="conhecimentoHeader">
+                        <i class="fa-brands fa-js"></i>
+                        <h2>Java Script</h2>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress" style="width:80% ;">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="conhecimentoInfo"></div>
+                </div>
+
+                <div class="skill">
+                    <div class="conhecimentoHeader">
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>Figma e Design</h2>
+                    </div>
+                    <div class="progressBar">
+                        <div class="progress" style="width:20% ;">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                    <div class="conhecimentoInfo"></div>
+                </div>
+
+                <div class="perfilHabilities">
+                    <div class="line">
+                        <h3 class="title">Nome :</h3>
+                        <p class="resp">Luiz Henrique</p>
+                    </div>
+                    <div class="line">
+                        <h3 class="title">Nascimento :</h3>
+                        <p class="resp">Março de 2004</p>
+                    </div>
+                    <div class="line">
+                        <h3 class="title">Contato :</h3>
+                        <p class="resp">luiz.prog.henri@gmail.com</p>
+                    </div>  
+                    <div class="line">
+                        <h3 class="title">GitHub :</h3>
+                        <p class="resp">
+                            <a href="https://github.com/LuriqueGon" target="_blank">https://github.com/LuriqueGon</a>
+                        </p>
+                        <p class="resp">
+                            <a href="https://github.com/LuriqueProg" target="_blank">https://github.com/LuriqueProg</a>
+                        </p>
+                    </div>                                      
+                </div>
+            </div>
+        </section>
+        <section class="sessaoOtherSkills">
+            <div class="header sessaoHeader">
+                <h2>Outras Habilidades</h2>                
+            </div>
+            <div class="otherSkills">
+                <ul class="skillsUlist">
+                    <li class="skillList">
+                        <div class="progress" style="width: 95%;">
+                            <span>95%</span>
+                        </div>
+                        <strong class="titleList">Python</strong>
+                    </li>  
+                    <li class="skillList">
+                        <div class="progress" style="width: 5%;">
+                            <span>5%</span>
+                        </div>
+                        <strong class="titleList">Java</strong>
+                    </li>  
+                    <li class="skillList">
+                        <div class="progress" style="width: 25%;">
+                            <span>25%</span>
+                        </div>
+                        <strong class="titleList">C</strong>
+                    </li>  
+                    <li class="skillList">
+                        <div class="progress" style="width: 50%;">
+                            <span>50%</span>
+                        </div>
+                        <strong class="titleList">Algoritmo</strong>
+                    </li>  
+                    <li class="skillList">
+                        <div class="progress" style="width: 40%;">
+                            <span>40%</span>
+                        </div>
+                        <strong class="titleList">Photoshop</strong>
+                    </li>  
+                       <li class="skillList">
+                        <div class="progress" style="width: 40%;">
+                            <span>40%</span>
+                        </div>
+                        <strong class="titleList">Adobe premiere</strong>
+                    </li>  
+                       <li class="skillList">
+                        <div class="progress" style="width: 10%;">
+                            <span>10%</span>
+                        </div>
+                        <strong class="titleList">Banco de Dados</strong>
+                    </li>  
+                                                         
+                </ul>
+            </div>
+        </section>
     </main>
     <div class="arrowUp">
         <a href="#home"><i class="fas fa-arrow-up"></i></a>
