@@ -1,0 +1,179 @@
+header{
+    position: relative;
+    background-color: gray;
+}
+header .menuHamb{
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+    z-index: 5;
+    transition: all ease 1.2s;
+}
+header.openMenu .menuHamb{
+    right: 17rem;
+}
+header .menuHamb div{
+    width: 2rem;
+    height: .2rem;
+    background-color: white;
+    margin: .2rem 0;
+    box-shadow: .2rem .2rem 0 black;
+    transition: all ease 1.5s;
+}
+header.openMenu .menuHamb div{
+    box-shadow: 0 0 0 black;
+    background-color: black;
+}
+header.openMenu .menuHamb div:nth-child(1){
+    transform: rotate(45deg) translate(0.5rem, 0rem);
+}
+header.openMenu .menuHamb div:nth-child(2){
+    opacity: 0;
+    visibility: hidden;
+}
+header.openMenu .menuHamb div:nth-child(3){
+    transform: rotate(-45deg) translate(0.6rem, 0rem);
+}
+
+header .img-wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.875);
+}
+header .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .5;
+    animation: zoom 15s;
+}
+header .banner .info p, header .banner .info h1, header .banner .info button{
+    opacity: 0;
+    animation:movebanner 2s 0.5s forwards;    
+}
+header .banner .info{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: .2rem;
+    /* background: #0005; */
+    width: 56rem;
+    text-align: center;
+    padding: 1rem 0;
+    text-shadow: .1rem .2rem .2rem black;
+    font-family: var(--font-2);
+}
+header .banner .info p{
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+header .banner .info p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--color-1);
+    font-family: var(--font-1);
+    letter-spacing: .3rem;
+}
+header .banner .info button{
+    border: 3px solid gray;
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;   
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .2rem .2rem black;
+}
+header .banner .info button:hover{
+    border: 3px solid var(--color-1);
+}
+header .banner .info button:hover i{
+    color: white;
+    text-shadow: 0 0 .5rem black;
+}
+header .banner .socialMidia{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+header .banner .socialMidia i:hover{
+    border-radius: 100%;
+    background-color: black;
+}
+header .banner .socialMidia #github:hover{
+    color: #808080;
+}
+header .banner .socialMidia #linkedin:hover{
+    color: var(--color-1);
+}
+header .banner .socialMidia #instagram:hover{
+    color: #d87093;
+}
+header .banner .socialMidia #pinterest:hover{
+    color: #e02525;
+}
+header .banner .socialMidia #youtube:hover{
+    color: #ff0000;
+}
+header nav{
+    display: none;
+    right: -100rem;
+    transition: all ease .5s;
+}
+header.openMenu nav{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    height: 100vh;
+    width: 20rem;
+    z-index: 4;
+    opacity: .9;
+    transition: all ease .5s;
+}
+header.openMenu nav ul.menuList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font: normal bold 2rem var(--font-4);
+    color: #555;
+    transition: color 1s;
+    opacity: 1;
+    padding: 5rem 0 0 0;
+}
+header.openMenu nav ul.menuList li{
+    margin: .3rem 0;
+    cursor: pointer;
+    text-align: center;
+}
+header.openMenu nav ul.menuList li:hover{
+    color: #6a3093;
+}
+header.openMenu nav ul.socialMidiaUlist{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 14rem;
+}
+header.openMenu nav ul.socialMidiaUlist li{
+    color: #6a3093;
+}
+header.openMenu nav ul.socialMidiaUlist li i:hover{
+    color: #000;
+}

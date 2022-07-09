@@ -1,3 +1,23 @@
 html{
     font-size: 16px;
 }
+.arrowUp{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-image: linear-gradient(to top, #a044ff, #6a3093);
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 52%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    opacity: .8;
+}
+.arrowUp:hover{
+    opacity: 1;
+    color: black;
+}
