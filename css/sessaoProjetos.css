@@ -1,0 +1,102 @@
+.sessaoProjetos{
+    margin: 5rem 0 10rem 0;
+    background-color: #ebe9e9;
+}
+.sessaoProjetos .cardGroup{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 80rem;
+    height: 26rem;
+    margin: auto;
+    overflow: hidden;
+    transition: all .5s;
+}
+.sessaoProjetos .cardGroup .next-previous{
+    width: 87rem;
+    font-size: 4rem;
+    position: absolute;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    display: flex;
+    justify-content: space-between;
+    left: 1%;
+}
+.sessaoProjetos .cardGroup .next-previous i:hover{
+    color: black;
+    cursor: pointer;
+}
+.sessaoProjetos .cardGroup .card{
+    width: 18rem;
+    height: 23rem;
+    margin: 0.5rem 1rem;
+    background-color: var(--color-1);
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+    transition: all .5s;
+    background-color: black;
+}
+.sessaoProjetos .cardGroup .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    transition: all .5s;
+    background-color: black;
+}
+.sessaoProjetos .cardGroup .card:hover img{
+    opacity: .7;
+    transform: scale(1.1);
+}
+.sessaoProjetos .cardGroup .card .cardHeader{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.sessaoProjetos .cardGroup .card:hover .cardHeader{
+    opacity: 1;
+}
+.sessaoProjetos .cardGroup .card .cardBody{
+    position: absolute;    
+    bottom: 1rem;
+    text-align: justify;
+    padding: 0 0.8rem;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    font-family: arial;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    opacity: 0;
+}
+.sessaoProjetos .cardGroup .card:hover .cardBody{
+    opacity: 1;
+}
+.cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont div{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+    margin: .2rem;
+}
+.cont div.contMark {
+    background-color: red;
+}
