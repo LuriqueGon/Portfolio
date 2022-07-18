@@ -1,0 +1,96 @@
+.sessaoOrcamento{
+    background-color: #000;
+    background-image: url('../image/bg-orcamento.jpg');
+    padding: 5rem 0;
+
+}
+.sessaoOrcamento .orcamento{
+    height: 480px;
+    width: 870px;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: #ccc;
+    border-radius: 4rem 2rem 4rem 2rem;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: .2rem;
+}
+.sessaoOrcamento .orcamento p{
+    margin: 1rem 0;
+}
+.sessaoOrcamento .orcamento h2{
+    position: absolute;
+    top: -1.5rem;
+    left: -1rem;
+    background-image: linear-gradient(to top, #a044ff, #6a3093);
+    padding: 0.5rem 2.5rem;
+    color: white;
+    box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 50%);
+    border-radius: 1rem;
+}
+.sessaoOrcamento .orcamento label{
+    font-size: 1.5rem;
+}
+.sessaoOrcamento .orcamento input{
+    border: solid 1px rgb(185, 176, 176);
+    width: 4rem;
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
+    border-radius: .4rem;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=range], #prazo{
+    width: 20rem;
+    border: solid 1px #fff;
+    padding: 0;
+    border-radius: 0;
+}
+.sessaoOrcamento .orcamento .lay, .sessaoOrcamento .orcamento .script{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.5rem;
+}
+.sessaoOrcamento .orcamento .lay p, .sessaoOrcamento .orcamento .script p{
+    margin: 2rem;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.sessaoOrcamento .orcamento .lay span, .sessaoOrcamento .orcamento .script span{
+    position: absolute;
+    left: 2rem;
+}
+.sub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p.valor{
+    background-image: linear-gradient(to top, #a044ff, #6a3093);
+    text-align: center;
+    color: white;
+    left: 50%;
+    bottom: 0rem;
+    font-size: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0.1rem 0.8rem rgb(0 0 0 / 46%);
+}
+.sub button{
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #a044ff, #6a3093);
+    color: #eee;
+    border-radius: 0.5rem;
+    font: 2rem var(--fort-3);
+    box-shadow: 0 0.1rem 0.8rem rgb(0 0 0 / 46%);
+    height: 5rem;
+    opacity: .8;
+}
+.sub button:hover{
+    opacity: 1;
+    color: #000;
+}

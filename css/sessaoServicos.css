@@ -1,0 +1,68 @@
+.sessaoServicos{
+    background-color: #000;
+    background-image: linear-gradient(45deg, #000, #222 );
+}
+.sessaoServicos .sessaoHeader{
+    padding: 2.5rem 0;
+}
+.sessaoServicos .sessaoHeader h2{
+    text-shadow: .1rem .1rem .1rem white;
+}
+.sessaoServicos .sessaoHeader p{
+    text-align: center;
+    font-size: 2.6rem;
+    color: white;
+    font-weight: bolder;
+}
+.sessaoServicos .sessaoHeader span{
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: .3rem;
+}
+.sessaoServicos .services{
+    margin: 0 5rem;
+    padding: 2rem 6rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    /* background-color: #222121; */
+}
+.sessaoServicos .services .serv{
+    margin: 4rem 1rem 0 1rem;
+    height: 25rem;
+    width: 20rem;
+    vertical-align: middle;
+    /* border: 1px solid #ccc; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border-radius: 3rem;
+}
+.sessaoServicos .services .serv i{
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    color: var(--color-1);
+    padding: 0 0 1rem 0;
+}
+.sessaoServicos .services .serv h1{
+    letter-spacing: .3rem;
+    text-align: center;
+    padding: 0 0 2rem 0;
+
+}
+.sessaoServicos .services .serv p{
+    padding: 0 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-indent: 2rem;
+    letter-spacing: .2rem;
+    font-weight: lighter;
+    /* text-align: justify; */
+}

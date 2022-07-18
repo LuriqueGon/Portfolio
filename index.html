@@ -31,11 +31,14 @@
     <link rel="stylesheet" href="./css/sessaoConhecimentos.css">
     <link rel="stylesheet" href="./css/sessaoOtherSkills.css">
     <link rel="stylesheet" href="./css/sessaoProjetos.css">
+    <link rel="stylesheet" href="./css/sessaoServicos.css">
+    <link rel="stylesheet" href="./css/sessaoOrcamento.css">
 
     <script src="scripts/openMenu.js" defer></script>
     <script src="scripts/cardMove.js" defer></script>
     <script src="scripts/cardLoader.js" defer></script>
     <script src="scripts/onLoad.js" defer></script>
+    <script src="scripts/Orcamento.js" defer></script>
 
     <title>Luiz Henrique - Portfólio Developer - | Lurique |</title>
 
@@ -72,9 +75,9 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#conhecimentos">Conhecimentos</a></li>
                 <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#orcamento">Orçamento</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
             <ul class="socialMidiaUlist">
                 <li>
@@ -365,6 +368,90 @@
                 </div>
                          
             </div>            
+        </section>
+        <section class="sessaoServicos" id="servicos">
+            <div class="header sessaoHeader">
+                <h2>Serviços</h2>
+                <p>Serviços Front-End de qualidade? </p>
+                <span>eu posso te ajudar!</span> 
+            </div>   
+            <div class="services">
+                <div class="serv">
+                    <i class="fa-solid fa-window-maximize"></i>
+                    <h1 class="titleServ">Aplicação Web </h1>
+                    <p>Sites pessoais, e-comerce, loading page, e até sistemas de internet</p>
+                </div>
+                <div class="serv">
+                    <i class="fa-solid fa-chalkboard"></i>
+                    <h1 class="titleServ">Aplicação Desktop</h1>
+                    <p>Aplicações multiplataformas (Windows, linux, mac...), com ultilização de um software especifico</p>
+                </div>
+                <div class="serv">
+                    <i class="fa-solid fa-bandage"></i>
+                    <h1 class="titleServ">Aplicação Mobile</h1>
+                    <p>Aplicações mobiles, unicamente para android, com necessidade do download do software</p>
+                </div>
+                <div class="serv">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <h1 class="titleServ">Sistema Integrado</h1>
+                    <p>Comunicação de diversos sistemas e dispositivos, dentro de um unico sistema</p>
+                </div>
+                <div class="serv">
+                    <i class="fa-solid fa-panorama"></i>
+                    <h1 class="titleServ">Design</h1>
+                    <p>Arte grafica especializada no ramo digital, e web.</p>
+                </div>
+                <div class="serv">
+                    <i class="fa-solid fa-bug"></i>
+                    <h1 class="titleServ">Bug</h1>
+                    <p>Resolução de Bugs e Problemas em Sites, e aplicações.</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="sessaoOrcamento" id="orcamento">            
+            <div class="orcamento">
+                <h2>Faça um orçamento</h2>
+                <div class="formulario">
+                    <p style="display: flex; justify-content: space-between; align-items: center;">
+                        <label for="Pages">Quantidade de Paginas</label>
+                        <input type="number" min="1" maxlength="2" id="Pages" style="margin-right: 13.8rem;">
+                    </p>
+
+                    <div class="lay">
+                        <span>Precisa de um Layout? </span>
+                        <p>
+                            <input type="radio" id="LSim" name="Lay">
+                            <label for="LSim">Sim</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="LNao" name="Lay" checked>
+                            <label for="LNao">Não</label>
+                        </p>
+                    </div>
+                    <div class="script">
+                        <span>Precisa de um Script? </span>
+                        <p>
+                            <input type="radio" id="SSim" name="Script">
+                            <label for="LSim">Sim</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="SNao" name="Script" checked>
+                            <label for="LNao">Não</label>
+                        </p>
+                    </div>
+                    
+
+                    <p>
+                        <label for="prazo" id="prazoValue">Prazo: 6 semanas </label>
+                        <input type="range" id="prazo" min="1" max="10">
+                    </p>
+                    <div class="sub">
+                        <p class="valor">R$ 0,00</p>
+                        <button onclick="Relatorio()">Enviar Relatorio (email)</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <div class="arrowUp">
