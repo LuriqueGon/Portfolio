@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,9 @@
     <meta name="title" content="Luiz Henrique - Portfólio Developer - | Lurique |">
     <meta name="author" content="Luiz Henrique / Lurique">
     <meta name="robots" content="index, follow">
-	<meta http-equiv="content-language" content="pt-br"/>
+    <meta http-equiv="content-language" content="pt-br" />
     <meta name="copyright" content="© 2022 Lurique" />
-	<meta name="rating" content="general" />
+    <meta name="rating" content="general" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="./favIcons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favIcons/favicon-32x32.png">
@@ -19,8 +20,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 
     <link rel="stylesheet" href="./css/style.css">
@@ -32,15 +35,24 @@
     <link rel="stylesheet" href="./css/sessaoProjetos.css">
 
     <script src="scripts/openMenu.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="/scripts/projectLoad.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
     <title>Luiz Henrique - Projetos Developer - | Lurique |</title>
 
 </head>
+
 <body class="bg-dark">
     <header id="home">
         <div class="menuHamb">
@@ -80,7 +92,7 @@
     <main>
         <section class="sessaoProjetos pb-4 bg-dark mb-5 mt-5" id="projetos">
             <div class="row m-2 bg-dark" id="cardGroup">
-                
+
             </div>
         </section>
     </main>
@@ -90,15 +102,153 @@
     </div>
 
 </body>
+
 </html>
 <script>
-    $('nav a[href^="#"]').on('click', function(e) {
+    $('nav a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top;
+            targetOffset = $(id).offset().top;
 
-        $('html, body').animate({ 
-        scrollTop: targetOffset - 100
+        $('html, body').animate({
+            scrollTop: targetOffset - 100
         }, 500);
+    });
+
+    const projects = [
+        { title: "Projeto Orçamento Pessoal", id: "Orcamento", lastAtt: "03 de Dezembro de 2022", image: "orcamento.png", Tech: "HTML-CSS-JS", type: 1, github: "Orcamento", host: "https://luriquegon.github.io/Orcamento" },
+        { title: "Projeto Controle de Estoque com PHP MVC", id: "ControleDeEstoque", lastAtt: "24 de Novembro de 2022", image: "ControleDeEstoque.png", Tech: "HTML-CSS-JS-PHP-SQL", type: 0, github: "ControleDeEstoque" },
+        { title: "Projeto Mata Mosquito", id: "MataMosquito", lastAtt: "24 de Novembro de 2022", image: "MataMosquito.png", Tech: "HTML-CSS-JS", type: 1, github: "MataMosquito", host: "https://luriquegon.github.io/MataMosquito/" }
+
+    ]
+
+
+    projects.forEach(project => {
+        console.log(project)
+
+        // CARD DO
+
+        const cardGroup = document.querySelector('#cardGroup')
+
+        const col = document.createElement('div')
+        col.className = "col-md-6 mb-5 mt-2"
+
+        const card = document.createElement('div')
+        card.className = "card position-relative border-0"
+
+        const link = document.createElement('a')
+        link.setAttribute('href', `#${project.id}`)
+        link.setAttribute('data-bs-toggle', 'modal')
+        link.setAttribute('data-bs-target', `#modalProject${project.id}`)
+
+        const cardBody = document.createElement('div')
+        cardBody.className = "card-body bg-dark"
+
+        const title = document.createElement('h5')
+        title.className = "card-title position-absolute border-bottom border-4 border-light card-title-card bg-primary text-light card-pos"
+        title.textContent = project.title
+
+        const lastAtt = document.createElement('div')
+        lastAtt.className = "card-text position-absolute bg-secondary text-light border-top border-3 border-light rounded-1 last-att card-pos"
+        lastAtt.textContent = `Ultima atualização: ${project.lastAtt}`
+
+        const type = document.createElement('div')
+        if (project.type == 1) {
+            type.className = "card-text position-absolute text-light border-1 border-light rounded-1 card-text-card fw-bold bg-success card-pos"
+            type.textContent = "Online"
+        } else {
+            type.className = "card-text position-absolute text-light border-1 border-light rounded-1 card-text-card fw-bold bg-danger card-pos"
+            type.textContent = "Offline"
+        }
+
+        const img = document.createElement('img')
+        img.src = `./image/projects/${project.image}`
+        img.className = "card-img-bottom border-0"
+
+        cardBody.appendChild(title)
+        cardBody.appendChild(lastAtt)
+        cardBody.appendChild(type)
+        link.appendChild(cardBody)
+        link.appendChild(img)
+        card.appendChild(link)
+        col.appendChild(card)
+
+        // MODAL DO
+
+        const modal = document.createElement('div')
+        modal.className = "modal fade"
+        modal.id = `modalProject${project.id}`
+        modal.setAttribute('tabindex', '-1')
+
+        const modalDialog = document.createElement('div')
+        modalDialog.className = "modal-dialog"
+
+        const modalContent = document.createElement('div')
+        modalContent.className = "modal-content bg-dark"
+
+        const modalHeader = document.createElement('div')
+        modalHeader.className = "modal-header border border-0 text-light text-center"
+
+        const modalTitle = document.createElement('h5')
+        modalTitle.className = "modal-title"
+        modalTitle.textContent = project.title
+
+        const modalIco = document.createElement('i')
+        modalIco.className = "fa fa-close icoClose btn-danger text-danger"
+        modalIco.setAttribute('data-bs-dismiss', 'modal')
+        modalIco.setAttribute('aria-label', 'close')
+
+        const modalBody = document.createElement('div')
+        modalBody.className = "modal-body text-light text-center"
+
+        const modalTech = document.createElement('p')
+        modalTech.textContent = "Tecnologias"
+
+        const modalTechText = document.createElement('span')
+        modalTechText.className = "text-info"
+        modalTechText.textContent = project.Tech
+
+        const modalFooter = document.createElement('div')
+        modalFooter.className = "modal-footer border border-0 d-flex justify-content-evenly"
+
+        const modalRepo = document.createElement('a')
+        modalRepo.className = "btn btn-primary"
+        modalRepo.setAttribute('target', '_blank')
+        modalRepo.setAttribute('href', `https://github.com/LuriqueGon/${project.github}#boaLeituraDeCodigo`)
+        modalRepo.textContent = "Acessar Repositorio"
+
+        const modalAcess = document.createElement('a')
+        modalAcess.className = "btn btn-primary"
+        modalAcess.setAttribute('target', '_blank')
+        modalAcess.textContent = "Acessar Projeto"
+
+        if (project.type == 1) {
+            modalAcess.setAttribute('href', `${project.host}#BonsTestes`)
+        }
+
+        modalFooter.appendChild(modalRepo)
+        if (project.type == 1) {
+            modalFooter.appendChild(modalAcess)
+        }
+
+        modalBody.appendChild(modalTech)
+        modalBody.appendChild(modalTechText)
+
+        modalHeader.appendChild(modalTitle)
+        modalHeader.appendChild(modalIco)
+
+        modalContent.appendChild(modalHeader)
+        modalContent.appendChild(modalBody)
+        modalContent.appendChild(modalFooter)
+
+        modalDialog.appendChild(modalContent)
+
+        modal.appendChild(modalDialog)
+
+        col.appendChild(modal)
+
+        console.log(col)
+        cardGroup.appendChild(col)
+
     });
 </script>
