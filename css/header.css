@@ -62,7 +62,7 @@ header .banner .info{
     color: white;
     letter-spacing: .2rem;
     /* background: #0005; */
-    width: 56rem;
+    max-width: 56rem;
     text-align: center;
     padding: 1rem 0;
     text-shadow: .1rem .2rem .2rem black;

@@ -1,22 +1,108 @@
 @media (max-width: 1280px){
-
+    .sessaoServicos .services{
+        justify-content: space-evenly;
+    }
 }
 @media (max-width: 1024px){
-
+    .sessaoServicos .services .serv{
+        height: 18rem;
+        width: 40rem;
+        padding: 1rem 4rem;
+        border: 1px solid white;
+        border-bottom: 4px solid white;
+    }
+    
 }
 @media (max-width: 928px){
+    .perfil, .header h3, .sessaoHeader p,.sessaoHeader span{
+        display: none!important;
+    }
+    .sessaoHeader h2{
+        margin-bottom: 4rem;
+    }
+    .sessaoServicos .services{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .sessaoServicos .services .serv{
+        height: 22rem;
+        width: 60rem;
+        padding: 1rem;
 
+    }
+    .sessaoConhecimentos{
+        height: 100%;
+        position: relative;
+        width: 100%;
+        background-color: #cbdcdc;
+        margin-bottom: 0;
+    }
+    .sessaoConhecimentos .skills{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45%;
+        margin: 0 4rem;
+    }
+    .sessaoConhecimentos .perfilHabilities{
+        position: absolute!important;
+        top: 7rem!important;
+        right: 2rem!important;
+        width: auto!important;
+    }
+    .orcamento{
+        height: auto!important;
+    }
 }
 @media (max-width: 820px){
-
+    .sessaoServicos .services .serv{
+        height: 22rem;
+        width: 70rem;
+    }
+    .sessaoConhecimentos .perfilHabilities{
+        position: static!important;
+        width: 0 auto 2rem auto!important;
+    }
 }
 
 @media (max-width: 768px){
-
+    .info button{
+        display: none;
+    }
+    .banner .info{
+        top: 45%;
+    }
+    .socialMidia{
+        display: none!important;
+    }
+    .sessaoServicos .services .serv {
+        height: auto;
+        width: 100%;
+    }
+    .sessaoOrcamento .orcamento .lay p, .sessaoOrcamento .orcamento .script p {
+        padding: 0;
+        padding-top: 3rem;
+    }
+    .sessaoOrcamento .orcamento .lay, .sessaoOrcamento .orcamento .script {
+        display: block;
+    }
 }
 
 @media (max-width: 540px){
-
+    .info p{
+        padding: 1rem 2rem!important;
+    }
+    .services{
+        padding: 2rem 0!important;
+    }
+    .sub{
+        display: block!important;
+    }
+    .sub p, .sub button{
+        width: 100%;
+    }
 }
 @media (max-width: 480px){
 

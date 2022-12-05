@@ -47,3 +47,10 @@ abbr{
     letter-spacing: .3rem;
     text-align: center;
 }
+.resp{
+    font-size: .8rem;
+}
+.resp a:hover{
+    color: black;
+    text-decoration: 2px underline blue!important;
+}
